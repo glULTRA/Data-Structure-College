@@ -1,6 +1,3 @@
-import java.lang.reflect.Array;
-import java.util.LinkedList;
-
 public class Stack<T> {
     private final T[] m_data;
     private final int m_capacity;
