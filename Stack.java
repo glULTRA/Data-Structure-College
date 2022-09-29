@@ -48,4 +48,13 @@ public class Stack<T> {
     public T peek(){
         return m_data[m_top];
     }
+
+    public void traceAll(){
+        String result = "[ ";
+        for (T t : m_data) {
+            result += t + " ";
+        }
+        result += "]";
+        System.out.println(result);
+    }
 }
