@@ -47,7 +47,7 @@ public class Queue <T> {
         return m_rear == -1;
     }
 
-    public String getAll(){
+    public String traceQueues(){
         String result = "[ ";
         for (T t : m_data) {
             if(t == null)
@@ -59,7 +59,7 @@ public class Queue <T> {
         return result + "]";
     }
 
-    public void traceAll(){
-        System.out.println(getAll());
+    public void display(){
+        System.out.println(traceQueues());
     }
 }

@@ -49,7 +49,7 @@ public class Stack<T> {
         return m_data[m_top];
     }
 
-    public void traceAll(){
+    public void display(){
         String result = "[ ";
         for (T t : m_data) {
             result += t + " ";
