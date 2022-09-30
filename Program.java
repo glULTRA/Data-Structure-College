@@ -14,7 +14,7 @@ public class Program {
         
         // Peek shows the last element (The most recent) stored in the queue.
         // System.out.println(stack.peek()); 
-        stack.traceAll();
+        stack.display();
 
         // Queue example.
         System.out.println("<---------QUEUE--------->");
@@ -27,6 +27,21 @@ public class Program {
         queue.deQueue();
         queue.deQueue();
         queue.enQueue("F"); // Can't be added ! cause the queue is already full and needs to be reseted.
-        queue.traceAll();
-    }   
+        queue.display();
+
+        // LinkedList example.
+        System.out.println("<---------LinkedList--------->");
+        LinkedList<String> linkedList = new LinkedList<String>();
+        linkedList.insert("A");
+        linkedList.insert("B");
+        linkedList.insert("C");
+        linkedList.insert("B");
+        linkedList.insert("A");
+        linkedList.delete(2);
+        linkedList.delete(2);
+
+
+        linkedList.display();
+        System.out.println(linkedList.size());
+    }
 }
