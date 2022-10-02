@@ -19,6 +19,7 @@ public class Stack<T> {
     }
 
     public void pop(){
+        if(isEmpty()) return;
         m_data[m_top--] = null;
     }
 
@@ -42,10 +43,11 @@ public class Stack<T> {
     }
 
     public boolean isEmpty(){
-        return m_top == 0;
+        return m_top == -1;
     }
 
     public T peek(){
+        if(isEmpty()) return null;
         return m_data[m_top];
     }
 
