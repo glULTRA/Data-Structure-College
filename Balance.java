@@ -12,7 +12,7 @@ public class Balance {
         for (Character c : text.toCharArray()) {        
             if(c == '(' || c == '{' || c=='[')
                 stack.push(c);
-            else if(translate.get(stack.peek()) == c || c == ')' || c == '}' || c == ']'){
+            else if(translate.get(stack.peek()) == c &&( c == ')' || c == '}' || c == ']')){
                 if(stack.isEmpty()) return false;
                 stack.pop();
             }
